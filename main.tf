@@ -51,6 +51,7 @@ resource "aws_wafv2_web_acl" "main" {
               name = excluded_rule.value
             }
           }
+          scope_down_statement = var.scope_down_statements
         }
       }
 
